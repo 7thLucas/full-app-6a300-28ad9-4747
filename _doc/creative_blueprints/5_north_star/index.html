@@ -1,0 +1,115 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait  .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left  { width: 42%; }
+.mode-landscape .sl-right { width: 58%; }
+.mode-portrait  .sl-left  { width: 100%; }
+.mode-portrait  .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex sl-layout p-12 gap-8">
+
+    <!-- Left: operation definitions -->
+    <div class="sl-left flex flex-col gap-5">
+
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-1 h-5 bg-cyan-500 rounded-full"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-slate-400">North Star</span>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900 leading-snug">Weekly Verified<br/>Operations</h2>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">The metric BloxConsole lives or dies by — real users completing real actions every week.</p>
+      </div>
+
+      <!-- Operations -->
+      <div class="flex flex-col gap-3 flex-1 justify-center">
+
+        <div class="flex items-start gap-3 bg-slate-50 border border-slate-100 rounded-xl p-4">
+          <span class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center text-white text-xs font-black flex-shrink-0">1</span>
+          <div>
+            <span class="text-slate-900 text-sm font-bold block">Fruit Lookup Completed</span>
+            <span class="text-slate-500 text-xs leading-relaxed">Player searched and viewed a fruit's full stats and current market value</span>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 bg-slate-50 border border-slate-100 rounded-xl p-4">
+          <span class="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center text-white text-xs font-black flex-shrink-0">2</span>
+          <div>
+            <span class="text-slate-900 text-sm font-bold block">Trade Evaluated</span>
+            <span class="text-slate-500 text-xs leading-relaxed">Player submitted both sides of a trade offer and received a fair-value verdict</span>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 bg-slate-50 border border-slate-100 rounded-xl p-4">
+          <span class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center text-white text-xs font-black flex-shrink-0">3</span>
+          <div>
+            <span class="text-slate-900 text-sm font-bold block">Boss Timer Started</span>
+            <span class="text-slate-500 text-xs leading-relaxed">Player activated a live boss respawn countdown</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: formula + projections -->
+    <div class="sl-right flex flex-col gap-4">
+
+      <!-- Projected label -->
+      <div class="bg-orange-50 border border-orange-200 rounded-xl px-4 py-2 flex items-center gap-2 flex-shrink-0">
+        <span class="text-orange-500 text-xs font-black">⚡</span>
+        <span class="text-orange-700 text-xs font-bold">Projected impact — based on your inputs</span>
+      </div>
+
+      <!-- Formula block -->
+      <div class="bg-slate-900 rounded-2xl p-6 flex-1 flex flex-col gap-4">
+
+        <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">WVO Formula</span>
+
+        <!-- Assumption inputs -->
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-between bg-slate-800 rounded-xl px-4 py-2">
+            <span class="text-slate-400 text-xs">Daily Active Users</span>
+            <span class="text-orange-300 text-xs font-bold bg-orange-950 border border-orange-800 px-3 py-0.5 rounded-full">Assumption — adjust this: 500</span>
+          </div>
+          <div class="flex items-center justify-between bg-slate-800 rounded-xl px-4 py-2">
+            <span class="text-slate-400 text-xs">Avg operations per user per day</span>
+            <span class="text-orange-300 text-xs font-bold bg-orange-950 border border-orange-800 px-3 py-0.5 rounded-full">Assumption — adjust this: 4</span>
+          </div>
+          <div class="flex items-center justify-between bg-slate-800 rounded-xl px-4 py-2">
+            <span class="text-slate-400 text-xs">Days per week</span>
+            <span class="text-slate-300 text-xs font-bold px-3">7</span>
+          </div>
+        </div>
+
+        <!-- Formula result -->
+        <div class="bg-slate-800 rounded-xl px-5 py-3">
+          <span class="text-slate-400 text-xs">500 DAU × 4 ops/day × 7 days =</span>
+          <span class="text-cyan-400 text-2xl font-black ml-2">14,000 ops / week</span>
+        </div>
+
+        <!-- Value derivation -->
+        <div class="bg-slate-800 rounded-xl px-5 py-3">
+          <span class="text-slate-400 text-xs block mb-1">Value per op: 3 min saved × $5/hr player time =</span>
+          <span class="text-slate-300 text-sm font-bold">$0.25 per operation</span>
+        </div>
+
+        <!-- Totals -->
+        <div class="flex gap-3">
+          <div class="flex-1 bg-cyan-600 rounded-xl p-4">
+            <span class="text-cyan-200 text-xs font-bold block mb-1">Community Value / Week</span>
+            <span class="text-white text-2xl font-black block">$3,500</span>
+            <span class="text-cyan-200 text-xs mt-1 block">14,000 ops × $0.25</span>
+          </div>
+          <div class="flex-1 bg-cyan-500 rounded-xl p-4">
+            <span class="text-cyan-100 text-xs font-bold block mb-1">Annual Community Value</span>
+            <span class="text-white text-2xl font-black block">$182,000</span>
+            <span class="text-cyan-100 text-xs mt-1 block">$3,500 / wk × 52 weeks</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
