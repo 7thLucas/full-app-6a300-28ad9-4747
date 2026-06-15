@@ -1,0 +1,54 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait  .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left  { width: 50%; }
+.mode-landscape .sl-right { width: 50%; }
+.mode-portrait  .sl-left  { width: 100%; flex: 1; }
+.mode-portrait  .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex sl-layout p-12 gap-10">
+
+    <!-- Left: content column -->
+    <div class="sl-left flex flex-col justify-between">
+
+      <!-- Brand mark -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-cyan-500 flex items-center justify-center shadow-sm">
+          <span class="text-white text-xs font-black tracking-tight">BC</span>
+        </div>
+        <span class="text-slate-400 text-xs font-bold tracking-[0.2em] uppercase">BloxConsole</span>
+      </div>
+
+      <!-- Headline block -->
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <div class="w-2 h-2 rounded-full bg-cyan-500"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-cyan-600">Blox Fruits Companion App</span>
+        </div>
+        <h1 class="text-6xl font-black text-slate-900 leading-none mb-5">
+          Every edge.<br/>
+          <span class="text-cyan-500">One tab.</span>
+        </h1>
+        <p class="text-base text-slate-500 max-w-xs leading-relaxed">
+          Fruit values, boss timers, trade calculator, and build planner — the console every serious Blox Fruits player keeps open every session.
+        </p>
+      </div>
+
+      <!-- Attribution placeholder -->
+      <data-attribution />
+
+    </div>
+
+    <!-- Right: visual panel -->
+    <div class="sl-right rounded-2xl overflow-hidden bg-slate-900">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=dark%20premium%20game%20companion%20console%20dashboard%20UI%2C%20neon%20cyan%20and%20orange%20accent%20panels%2C%20fruit%20icons%2C%20boss%20countdown%20timers%2C%20stat%20cards%2C%20sleek%20black%20background%2C%20editorial%20product%20screenshot%20style"
+        class="w-full h-full object-cover"
+        alt="BloxConsole dashboard preview"
+      />
+    </div>
+
+  </div>
+</section>
