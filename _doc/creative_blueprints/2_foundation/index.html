@@ -1,0 +1,75 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait  .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left  { width: 58%; }
+.mode-landscape .sl-right { width: 42%; }
+.mode-portrait  .sl-left  { width: 100%; }
+.mode-portrait  .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex sl-layout p-12 gap-8">
+
+    <!-- Left: narrative -->
+    <div class="sl-left flex flex-col gap-5">
+
+      <!-- Section label + headline -->
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-1 h-5 bg-cyan-500 rounded-full"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-slate-400">Foundation</span>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900 leading-snug">
+          The tab problem every Blox<br/>Fruits player knows
+        </h2>
+      </div>
+
+      <!-- Problem card -->
+      <div class="bg-slate-900 rounded-2xl p-6 flex-1">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-6 h-6 rounded-full bg-orange-500 flex items-center justify-center text-white text-xs font-black">!</span>
+          <span class="text-orange-400 text-xs font-bold tracking-widest uppercase">The Problem</span>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+          Every session starts the same way — four tabs open before the game loads. Wiki for fruit stats. Discord for trade values. YouTube for boss locations. Reddit for tier lists. All conflicting, all outdated.
+        </p>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-3 bg-slate-800 rounded-xl px-3 py-2">
+            <span class="text-orange-400 text-xs font-bold">▸</span>
+            <span class="text-slate-400 text-xs">Wikis miss the latest balance patches</span>
+          </div>
+          <div class="flex items-center gap-3 bg-slate-800 rounded-xl px-3 py-2">
+            <span class="text-orange-400 text-xs font-bold">▸</span>
+            <span class="text-slate-400 text-xs">Bad trades happen when values aren't current</span>
+          </div>
+          <div class="flex items-center gap-3 bg-slate-800 rounded-xl px-3 py-2">
+            <span class="text-orange-400 text-xs font-bold">▸</span>
+            <span class="text-slate-400 text-xs">Boss spawns missed while searching Discord</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution card -->
+      <div class="bg-cyan-500 rounded-2xl p-6 flex-1">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-cyan-600 text-xs font-black">✓</span>
+          <span class="text-white text-xs font-bold tracking-widest uppercase">The Solution</span>
+        </div>
+        <p class="text-white text-sm font-semibold leading-relaxed">
+          BloxConsole is the single browser tab that replaces all of them — live fruit data, boss respawn timers, a trade calculator, tier lists, and a build planner in one clean dashboard. Any answer in under 5 seconds. No Discord search required.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right rounded-2xl overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=frustrated%20gamer%20surrounded%20by%20chaotic%20browser%20tabs%20and%20conflicting%20information%2C%20editorial%20digital%20illustration%2C%20orange%20chaos%20energy%2C%20dark%20moody%20background%2C%20information%20overload%20concept%20art"
+        class="w-full h-full object-cover"
+        alt=""
+      />
+    </div>
+
+  </div>
+</section>
